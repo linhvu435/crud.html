@@ -1,0 +1,22 @@
+
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<form action="/edit" method="post" >
+
+    <input name="id" th:value="${product.id}">
+    <br>
+    <input name="name" th:value="${product.name}">
+    <br>
+    <input name="img" th:value="${product.img}">
+    <br>
+    <input name="price" th:value="${product.price}">
+
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
